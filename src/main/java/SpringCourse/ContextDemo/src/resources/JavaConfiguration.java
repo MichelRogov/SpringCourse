@@ -1,6 +1,6 @@
-package SpringCourse.ContextDemo.resources;
+package SpringCourse.ContextDemo.src.resources;
 
-import SpringCourse.ContextDemo.POJO.ListDefinition.MyJavaList;
+import SpringCourse.ContextDemo.src.POJO.ListDefinition.MyJavaList;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

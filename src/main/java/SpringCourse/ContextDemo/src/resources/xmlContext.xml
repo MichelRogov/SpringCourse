@@ -7,47 +7,47 @@
 
 
     <!--Without default constructor and args-->
-    <!--<bean id="employee" class="SpringCourse.ContextDemo.POJO.Employee">-->
+    <!--<bean id="employee" class="SpringCourse.ContextDemo.src.POJO.Employee">-->
     <!--</bean>-->
 
     <!--Constructor with 3 args without types-->
-    <!--<bean id="employee" class="SpringCourse.ContextDemo.POJO.Employee">-->
+    <!--<bean id="employee" class="SpringCourse.ContextDemo.src.POJO.Employee">-->
     <!--<constructor-arg value="Alex"/>-->
     <!--<constructor-arg value="30"/>-->
     <!--<constructor-arg value="Germany"/>-->
     <!--</bean>-->
 
     <!--Constructor with indexes of args-->
-    <!--<bean id="employee" class="SpringCourse.ContextDemo.POJO.Employee">-->
+    <!--<bean id="employee" class="SpringCourse.ContextDemo.src.POJO.Employee">-->
         <!--<constructor-arg index="0" value="30"/>-->
         <!--<constructor-arg index="1" value="Germany"/>-->
     <!--</bean>-->
 
     <!--Without name it works only in case if beans have no relation between each other-->
-    <!--<bean id="company" class="SpringCourse.ContextDemo.POJO.Company">-->
+    <!--<bean id="company" class="SpringCourse.ContextDemo.src.POJO.Company">-->
         <!--<constructor-arg ref="address"/>-->
         <!--<constructor-arg ref="employee"/>-->
     <!--</bean>-->
 
-    <bean id="company" class="SpringCourse.ContextDemo.POJO.Company">
+    <bean id="company" class="SpringCourse.ContextDemo.src.POJO.Company">
         <property name="employee" ref="employee"/>
         <property name="address" ref="address"/>
     </bean>
 
-    <bean id="employee" class="SpringCourse.ContextDemo.POJO.Employee">
+    <bean id="employee" class="SpringCourse.ContextDemo.src.POJO.Employee">
     <constructor-arg type="java.lang.String" value="Alex"/>
     <constructor-arg type="int" value="30"/>
     <constructor-arg type="java.lang.String" value="Germany"/>
     </bean>
 
-    <bean id="address" class="SpringCourse.ContextDemo.POJO.Address"/>
-    <bean id="listClass1" class="SpringCourse.ContextDemo.POJO.ListDefinition.ListClass1"/>
-    <bean id="listClass2" class="SpringCourse.ContextDemo.POJO.ListDefinition.ListClass2"/>
+    <bean id="address" class="SpringCourse.ContextDemo.src.POJO.Address"/>
+    <bean id="listClass1" class="SpringCourse.ContextDemo.src.POJO.ListDefinition.ListClass1"/>
+    <bean id="listClass2" class="SpringCourse.ContextDemo.src.POJO.ListDefinition.ListClass2"/>
 
     <bean id="myXmlList"
-          class="SpringCourse.ContextDemo.POJO.ListDefinition.MyXmlList">
+          class="SpringCourse.ContextDemo.src.POJO.ListDefinition.MyXmlList">
         <property name="myList">
-            <list value-type="SpringCourse.ContextDemo.POJO.ListDefinition.ListClasses">
+            <list value-type="SpringCourse.ContextDemo.src.POJO.ListDefinition.ListClasses">
                 <ref bean="listClass1"/>
                 <ref bean="listClass2"/>
             </list>

@@ -1,4 +1,4 @@
-package SpringCourse.ContextDemo.POJO.ListDefinition;
+package SpringCourse.ContextDemo.src.POJO.ListDefinition;
 
 public class ListClass2 implements ListClasses {
     @Override

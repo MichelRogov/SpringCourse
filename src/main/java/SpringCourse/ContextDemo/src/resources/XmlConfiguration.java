@@ -1,4 +1,4 @@
-package SpringCourse.ContextDemo.resources;
+package SpringCourse.ContextDemo.src.resources;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;

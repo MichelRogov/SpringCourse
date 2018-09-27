@@ -1,9 +1,9 @@
-package SpringCourse.ContextDemo;
+package SpringCourse.ContextDemo.src;
 
-import SpringCourse.ContextDemo.POJO.Company;
-import SpringCourse.ContextDemo.POJO.Employee;
-import SpringCourse.ContextDemo.POJO.ListDefinition.MyJavaList;
-import SpringCourse.ContextDemo.POJO.ListDefinition.MyXmlList;
+import SpringCourse.ContextDemo.src.POJO.Company;
+import SpringCourse.ContextDemo.src.POJO.Employee;
+import SpringCourse.ContextDemo.src.POJO.ListDefinition.MyJavaList;
+import SpringCourse.ContextDemo.src.POJO.ListDefinition.MyXmlList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

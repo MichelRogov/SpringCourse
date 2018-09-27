@@ -1,4 +1,4 @@
-package SpringCourse.ContextDemo.POJO;
+package SpringCourse.ContextDemo.src.POJO;
 
 
 public class Employee {

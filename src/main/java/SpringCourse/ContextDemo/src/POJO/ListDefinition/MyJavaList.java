@@ -1,18 +1,12 @@
-package SpringCourse.ContextDemo.POJO.ListDefinition;
+package SpringCourse.ContextDemo.src.POJO.ListDefinition;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 
 import java.util.List;
 
-public class MyXmlList {
+public class MyJavaList {
+    @Autowired
     private List<ListClasses> myList;
-
-    @Required
-    public void setMyList(List<ListClasses> myList) {
-        this.myList = myList;
-    }
-
 
     public void printList() {
         for (ListClasses listClasses : myList) {
