@@ -11,10 +11,10 @@ import project.POJO.ListDefinition.MyXmlList;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class App {
+public class ContextDemoApp {
 
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(App.class, args);
+        ApplicationContext context = SpringApplication.run(ContextDemoApp.class, args);
         System.out.println("Bean names: " +
                 Arrays.toString(context.getBeanNamesForType(Employee.class)));
         Employee employee = context.getBean(Employee.class);
