@@ -1,8 +1,8 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
 import engine.ConsoleInput;
 import engine.RequestBody;
 import engine.Service;
 import engine.StartMethod;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 import org.reflections.Reflections;
 
