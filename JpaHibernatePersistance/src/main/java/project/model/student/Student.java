@@ -1,4 +1,4 @@
-package project.student;
+package project.model.student;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

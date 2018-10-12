@@ -1,4 +1,4 @@
-package project.user;
+package project.model.user;
 
 
 import project.engine.RequestBody;

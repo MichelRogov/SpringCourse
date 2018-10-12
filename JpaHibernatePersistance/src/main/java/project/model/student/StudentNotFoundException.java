@@ -1,4 +1,4 @@
-package project.student;
+package project.model.student;
 
 public class StudentNotFoundException extends RuntimeException {
 

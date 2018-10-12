@@ -1,16 +1,19 @@
-package project.student;
+package project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import project.model.student.Student;
+import project.model.student.StudentNotFoundException;
+import project.repository.StudentRepository;
 
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class StudentResource {
+public class StudentController {
 
     @Autowired
     private StudentRepository studentRepository;
