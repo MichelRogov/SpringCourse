@@ -30,15 +30,20 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserInfoDao findUserByEmail(String email) {
-        User user = userRepository.findByEmail(email);
+        UserInfoDao userInfoDao = userAccountRepository.getUserInfoDaoByEmail(email);
+        System.out.println("USER INFO DAO: " + userInfoDao);
+
+//        User user = userRepository.findByEmail(email);
 //        UserAccount userAccount = userAccountRepository.findByUser(user);
 //        Optional<Language> language = languageRepository.findById(userAccount.getLanguage().getId());
 
 //        Integer languageId = userAccountRepository.findLanguageDesByUserId(user.getId());
 //        Optional<Language> language = languageRepository.findById(languageId);
 
-        String languageDes = userAccountRepository.findLanguageDesByUserId(user.getId());
-        return new UserInfoDao(user.getFirstName(), user.getLastName(), user.getEmail(), languageDes);
+//        String languageDes = userAccountRepository.findLanguageDesByUserId(user.getId());
+//        return new UserInfoDao(user.getFirstName(), user.getLastName(), user.getEmail(), languageDes);
+
+        return userInfoDao;
     }
 
     private void createUserAccount(User user, UserWebDto userWebDto) {
