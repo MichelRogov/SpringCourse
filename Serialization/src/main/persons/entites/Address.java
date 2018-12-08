@@ -1,4 +1,4 @@
-package com.persons.entites;
+package main.persons.entites;
 
 public class Address {
 	private String city;

@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import project.model.user.User;
 
 @SpringBootApplication
-public class JpaHibernatePersistanceApp {
+public class JpaHibernatePersistenceApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(JpaHibernatePersistanceApp.class, args);
+        SpringApplication.run(project.JpaHibernatePersistenceApp.class, args);
 
         User user = new User();
 

@@ -8,6 +8,8 @@
     <artifactId>ContextDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>ContextDemo</name>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

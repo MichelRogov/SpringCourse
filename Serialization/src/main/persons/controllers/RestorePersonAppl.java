@@ -1,7 +1,7 @@
-package com.persons.controllers;
+package main.persons.controllers;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.persons.entites.Person;
+import main.persons.entites.Person;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;

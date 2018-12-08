@@ -1,10 +1,10 @@
-package com.persons.controllers;
+package main.persons.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.persons.entites.Address;
-import com.persons.entites.Child;
-import com.persons.entites.Employee;
-import com.persons.entites.Person;
+import main.persons.entites.Address;
+import main.persons.entites.Child;
+import main.persons.entites.Employee;
+import main.persons.entites.Person;
 
 import java.io.IOException;
 import java.io.PrintStream;

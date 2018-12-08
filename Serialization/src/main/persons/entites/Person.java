@@ -1,10 +1,10 @@
-package com.persons.entites;
+package main.persons.entites;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.jackson.LocalDateDeserializer;
-import com.jackson.LocalDateSerializer;
+import main.jackson.LocalDateDeserializer;
+import main.jackson.LocalDateSerializer;
 
 import java.time.LocalDate;
 
