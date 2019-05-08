@@ -26,7 +26,8 @@ public class UserAccount {
     private User user;
 
     @Column(name = "ACCOUNT_STATUS_ID", nullable = false)
-    private Integer statusId;
+    @Convert(converter = AccountStatusConverter.class)
+    private AccountStatus status;
 
     @JoinColumn(name = "LANGUAGE_ID", nullable = false)
     @OneToOne

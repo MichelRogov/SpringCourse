@@ -18,6 +18,7 @@ public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
 
+    @CrossOrigin
     @GetMapping("/students")
     public List<Student> retrieveAllStudents() {
         return studentRepository.findAll();

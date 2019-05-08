@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
     private void createUserAccount(User user, UserWebDto userWebDto) {
         UserAccount userAccount = new UserAccount();
         userAccount.setUser(user);
-        userAccount.setStatusId(AccountStatus.NEW.getId());
+        userAccount.setStatus(AccountStatus.NEW);
 
         Optional<Language> language = languageRepository.findById(userWebDto.getUserLanguageId());
         if(!language.isPresent()){

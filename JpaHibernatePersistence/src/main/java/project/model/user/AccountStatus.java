@@ -1,5 +1,7 @@
 package project.model.user;
 
+import java.util.Arrays;
+
 public enum AccountStatus {
     NEW(1);
 
@@ -15,5 +17,16 @@ public enum AccountStatus {
 
     public Integer getId() {
         return id;
+    }
+
+    public static AccountStatus findById (Integer id) {
+        if (id == null){
+            throw new IllegalArgumentException("id can not be null");
+        }
+        return Arrays
+                .stream(AccountStatus.values())
+                .filter(a -> a.getId().equals(id))
+                .findFirst()
+                .get();
     }
 }
