@@ -46,6 +46,7 @@ public class AnnotationEngineApp {
                         System.out.println(consoleInput.displayMessage());
                         Scanner scanner = new Scanner(System.in);
                         input = scanner.nextLine();
+                        scanner.close();
                     }
 
                     if (parameter.isAnnotationPresent(RequestBody.class)) {
